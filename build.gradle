@@ -1,0 +1,61 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.davinatw'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+//    testImplementation platform('org.junit:junit-bom:5.10.0')
+//    testImplementation 'org.junit.jupiter:junit-jupiter'
+//    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation 'org.seleniumhq.selenium:selenium-java:4.29.0'
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.20.1'
+
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-java
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.20.1'
+
+    testImplementation 'io.github.bonigarcia:webdrivermanager:6.2.0'
+
+    testImplementation group: 'org.json', name: 'json', version: '20231013'
+    testImplementation 'io.rest-assured:json-path:5.3.0'
+    testImplementation 'io.rest-assured:json-schema-validator:5.5.6'
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.24.0'
+}
+
+test {
+    useJUnit()
+}
+
+configurations{
+    cucumberRuntime{
+        extendsFrom testImplementation
+    }
+}
+
+def tags    = (findProperty('tags') == null) ? 'not @exclude' : findProperty('tags') + ' and not @exclude'
+
+tasks.register('cucumber', JavaExec) {
+    description = 'Running Cucumber Test'
+    dependsOn 'testClasses'
+
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass.set('io.cucumber.core.cli.Main')
+
+    args = [
+            '--plugin', 'pretty',
+            '--plugin', 'html:reports/cucumber.html',
+            '--plugin', 'json:reports/cucumber.json',
+            '--glue', 'org.davinatw',
+            '--tags', tags,
+            'src/test/resources/'
+    ]
+}
