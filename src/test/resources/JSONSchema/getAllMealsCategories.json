@@ -1,0 +1,336 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "categories": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "idCategory": {
+              "type": "string"
+            },
+            "strCategory": {
+              "type": "string"
+            },
+            "strCategoryThumb": {
+              "type": "string"
+            },
+            "strCategoryDescription": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "idCategory",
+            "strCategory",
+            "strCategoryThumb",
+            "strCategoryDescription"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "idCategory": {
+              "type": "string"
+            },
+            "strCategory": {
+              "type": "string"
+            },
+            "strCategoryThumb": {
+              "type": "string"
+            },
+            "strCategoryDescription": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "idCategory",
+            "strCategory",
+            "strCategoryThumb",
+            "strCategoryDescription"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "idCategory": {
+              "type": "string"
+            },
+            "strCategory": {
+              "type": "string"
+            },
+            "strCategoryThumb": {
+              "type": "string"
+            },
+            "strCategoryDescription": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "idCategory",
+            "strCategory",
+            "strCategoryThumb",
+            "strCategoryDescription"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "idCategory": {
+              "type": "string"
+            },
+            "strCategory": {
+              "type": "string"
+            },
+            "strCategoryThumb": {
+              "type": "string"
+            },
+            "strCategoryDescription": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "idCategory",
+            "strCategory",
+            "strCategoryThumb",
+            "strCategoryDescription"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "idCategory": {
+              "type": "string"
+            },
+            "strCategory": {
+              "type": "string"
+            },
+            "strCategoryThumb": {
+              "type": "string"
+            },
+            "strCategoryDescription": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "idCategory",
+            "strCategory",
+            "strCategoryThumb",
+            "strCategoryDescription"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "idCategory": {
+              "type": "string"
+            },
+            "strCategory": {
+              "type": "string"
+            },
+            "strCategoryThumb": {
+              "type": "string"
+            },
+            "strCategoryDescription": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "idCategory",
+            "strCategory",
+            "strCategoryThumb",
+            "strCategoryDescription"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "idCategory": {
+              "type": "string"
+            },
+            "strCategory": {
+              "type": "string"
+            },
+            "strCategoryThumb": {
+              "type": "string"
+            },
+            "strCategoryDescription": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "idCategory",
+            "strCategory",
+            "strCategoryThumb",
+            "strCategoryDescription"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "idCategory": {
+              "type": "string"
+            },
+            "strCategory": {
+              "type": "string"
+            },
+            "strCategoryThumb": {
+              "type": "string"
+            },
+            "strCategoryDescription": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "idCategory",
+            "strCategory",
+            "strCategoryThumb",
+            "strCategoryDescription"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "idCategory": {
+              "type": "string"
+            },
+            "strCategory": {
+              "type": "string"
+            },
+            "strCategoryThumb": {
+              "type": "string"
+            },
+            "strCategoryDescription": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "idCategory",
+            "strCategory",
+            "strCategoryThumb",
+            "strCategoryDescription"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "idCategory": {
+              "type": "string"
+            },
+            "strCategory": {
+              "type": "string"
+            },
+            "strCategoryThumb": {
+              "type": "string"
+            },
+            "strCategoryDescription": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "idCategory",
+            "strCategory",
+            "strCategoryThumb",
+            "strCategoryDescription"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "idCategory": {
+              "type": "string"
+            },
+            "strCategory": {
+              "type": "string"
+            },
+            "strCategoryThumb": {
+              "type": "string"
+            },
+            "strCategoryDescription": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "idCategory",
+            "strCategory",
+            "strCategoryThumb",
+            "strCategoryDescription"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "idCategory": {
+              "type": "string"
+            },
+            "strCategory": {
+              "type": "string"
+            },
+            "strCategoryThumb": {
+              "type": "string"
+            },
+            "strCategoryDescription": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "idCategory",
+            "strCategory",
+            "strCategoryThumb",
+            "strCategoryDescription"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "idCategory": {
+              "type": "string"
+            },
+            "strCategory": {
+              "type": "string"
+            },
+            "strCategoryThumb": {
+              "type": "string"
+            },
+            "strCategoryDescription": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "idCategory",
+            "strCategory",
+            "strCategoryThumb",
+            "strCategoryDescription"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "idCategory": {
+              "type": "string"
+            },
+            "strCategory": {
+              "type": "string"
+            },
+            "strCategoryThumb": {
+              "type": "string"
+            },
+            "strCategoryDescription": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "idCategory",
+            "strCategory",
+            "strCategoryThumb",
+            "strCategoryDescription"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "categories"
+  ]
+}
