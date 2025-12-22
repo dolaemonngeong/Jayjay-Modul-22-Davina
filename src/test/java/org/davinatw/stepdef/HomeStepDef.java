@@ -7,6 +7,8 @@ import org.davinatw.BaseTest;
 import org.davinatw.page.HomePage;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class HomeStepDef extends BaseTest {
     HomePage homePage;
@@ -14,13 +16,13 @@ public class HomeStepDef extends BaseTest {
     @Given("user is on homepage")
     public void userIsOnHomepage() {
         homePage = new HomePage(driver);
-        homePage.validateBackButoonDisplayed();
+        assertTrue(homePage.validateHeaderDisplayed());
     }
 
     @Then("user should be redirected to homepage")
     public void validateUserIsOnHomepage() {
         homePage = new HomePage(driver);
-        homePage.validateBackButoonDisplayed();
+        assertTrue(homePage.validateHeaderDisplayed());
     }
 
     @When("user click add to cart button")
@@ -30,7 +32,7 @@ public class HomeStepDef extends BaseTest {
 
     @Then("add to cart button changes to remove button")
     public void addToCartButtonChangesToRemove() {
-        homePage.validateRemoveButtonDisplayed();
+        assertTrue(homePage.validateRemoveButtonDisplayed());
     }
 
     @Then("cart icon shows item count")

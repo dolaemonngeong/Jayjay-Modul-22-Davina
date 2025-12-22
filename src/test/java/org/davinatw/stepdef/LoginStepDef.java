@@ -7,6 +7,8 @@ import io.cucumber.java.en.When;
 import org.davinatw.BaseTest;
 import org.davinatw.page.LoginPage;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class LoginStepDef extends BaseTest {
     LoginPage loginPage;
 
@@ -35,6 +37,6 @@ public class LoginStepDef extends BaseTest {
 
     @Then("user see error message {string}") // Fixed spelling
     public void userSeeErrorMessage(String errorMessage) {
-        loginPage.validateErrorMessage(errorMessage);
+        assertTrue(loginPage.validateErrorMessage(errorMessage));
     }
 }

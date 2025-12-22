@@ -8,9 +8,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class HomePage {
     WebDriver driver;
 
-//    By backPackItem = By.xpath("//*[@id=\"item_4_title_link\"]/div");
 
-    By backPackItem = By.xpath("//*[@id=\"header_container\"]/div[1]/div[2]/div");
+    By headerDisplay = By.xpath("//*[@id=\"header_container\"]/div[1]/div[2]/div");
 
     private By addToCartButton = By.xpath("//*[@id=\"add-to-cart-sauce-labs-backpack\"]");
     private By removeButton = By.xpath("//*[@id=\"remove-sauce-labs-backpack\"]");
@@ -21,25 +20,20 @@ public class HomePage {
         this.driver = driver;
     }
 
-    public void validateBackButoonDisplayed(){
+    public boolean validateHeaderDisplayed(){
 
-        assertTrue(driver.findElement(backPackItem).isDisplayed());
+        return driver.findElement(headerDisplay).isDisplayed();
     }
 
     public void clickAddToCart() {
         driver.findElement(addToCartButton).click();
     }
 
-    public void validateRemoveButtonDisplayed() {
-        assertTrue(driver.findElement(removeButton).isDisplayed());
-    }
-
-    public void validateCartBadgeDisplayed() {
-        assertTrue(driver.findElement(cartBadge).isDisplayed());
+    public boolean validateRemoveButtonDisplayed() {
+        return driver.findElement(removeButton).isDisplayed();
     }
 
     public String getCartItemCount() {
         return driver.findElement(cartBadge).getText();
     }
 }
-

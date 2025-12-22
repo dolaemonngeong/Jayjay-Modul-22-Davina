@@ -3,8 +3,6 @@ package org.davinatw.page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 public class LoginPage {
     WebDriver driver;
 
@@ -35,9 +33,9 @@ public class LoginPage {
         driver.findElement(loginButton).click();
     }
 
-    public void validateErrorMessage(String errorMessage){
+    public boolean validateErrorMessage(String errorMessage){
 
-        assertTrue(driver.getPageSource().contains(errorMessage));
+        return driver.getPageSource().contains(errorMessage);
     }
 
 }
