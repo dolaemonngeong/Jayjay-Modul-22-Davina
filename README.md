@@ -92,6 +92,16 @@ Berfungsi sebagai test runner Cucumber untuk menjalankan seluruh skenario penguj
 
 ---
 
+## Cara Menjalankan Test
+- Menggunakan terminal
+./gradlew clean test
+
+- Menggunakan IntelliJ IDEA
+1. Buka class CucumberTest
+2. Klik tombol Run
+
+---
+
 ## Hasil Report Test
 <img width="1710" height="1107" alt="Screenshot 2025-12-23 at 10 21 02" src="https://github.com/user-attachments/assets/2de0ee77-f749-4e82-a183-401a9cc7a871" />
 
